@@ -10,8 +10,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>OhAuthToo</RootNamespace>
     <AssemblyName>OhAuthToo</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +38,6 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -45,8 +45,6 @@
     <Compile Include="ConcreteClients\FacebookClient.cs" />
     <Compile Include="Interfaces\IOAuthAuthorizer.cs" />
     <Compile Include="Interfaces\IOAuthClient.cs" />
-    <Compile Include="Utils\DynamicJsonConverter.cs" />
-    <Compile Include="Utils\DynamicJsonObject.cs" />
     <Compile Include="Utils\Gender.cs" />
     <Compile Include="Utils\OAuthClientUtils.cs" />
     <Compile Include="ConcreteAuthorizers\VkontakteAuthorizer.cs" />

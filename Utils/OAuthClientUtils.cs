@@ -10,14 +10,6 @@ namespace OhAuthToo.Utils
 
     public static class OAuthClientUtils
     {
-        public static dynamic JsonToDynamic(string response)
-        {
-            var jss = new JavaScriptSerializer();
-            jss.RegisterConverters(new JavaScriptConverter[] { new DynamicJsonConverter() });
-            var dynamicResponse = jss.Deserialize(response, typeof(object)) as dynamic;
-            return dynamicResponse;
-        }
-
         public static Dictionary<string, object> JsonToDictionary(string response)
         {
             var jss = new JavaScriptSerializer();
